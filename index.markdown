@@ -1,6 +1,13 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
+list_title: Read Latest Posts
+title: false
 ---
+
+# Github Pages Demo Blog
+
+Welcome to this demo blog!
+
+This website is intended to show you how to easily build and deploy a blog / portfolio with GitHub Pages and Jekyll.
+
+You can find the sources of this project [here](https://github.com/SimonDosda/gp-blog).
