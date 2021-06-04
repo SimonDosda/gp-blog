@@ -3,9 +3,12 @@ layout: post
 title: "Write a Post"
 date: 2021-05-31
 categories: jekyll blogging
+feature_image: feature-image.jpg
 ---
 
 The goal of this article is to add some extra info about blog writing with _Jekyll_.
+
+_Photo by [Aaron Burden](https://unsplash.com/@aaronburden)_
 
 ## Structure your posts
 
