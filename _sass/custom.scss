@@ -4,3 +4,25 @@
         color: orangered;
     }
 }
+
+.featured-image {
+    margin-bottom: 50px;
+    img {
+        width: 100%;
+        max-height: 250px;
+        object-fit: cover;
+    }
+}
+
+.post-list > li {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    
+    div:first-child {
+        flex: 4 0 200px;
+    }
+    .featured-image {
+        flex: 1 0 200px;
+        margin-bottom: 0;
+    }
+}
