@@ -1,0 +1,13 @@
+<section class="comments">    
+  {% if site.data.comments[page.slug] %}
+    <div>
+      <h2>Comments</h2>
+      {% include comment-list.html %}
+    </div>
+  {% endif %}
+
+  <div class="comment-new">
+    <h2>Leave a Comment</h2>
+    {% include comment-form.html %}
+  </div>
+</section>

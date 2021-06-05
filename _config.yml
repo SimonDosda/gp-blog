@@ -31,6 +31,8 @@ github_username: simondosda
 permalink: /:collection/:year-:month-:day-:title:output_ext
 show_excerpts: true
 
+staticman_url: https://sdosda-staticman.herokuapp.com/v3/entry/github/simondosda/gp-blog/main/comments
+
 # Build settings
 theme: minima
 plugins:

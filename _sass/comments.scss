@@ -1,0 +1,51 @@
+.comment {
+    padding-top: 10px;
+    h3 {
+        display: inline;
+        color: royalblue;
+    }
+    p {
+        margin: 0;
+    }
+}
+
+.comment-new {
+    margin-top: 25px;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+
+    .comment-message, .comment-name {
+        font-size: 16px;
+        padding: 15px;
+        border: 1px solid #ddd;
+        margin: 0;
+    }
+
+    .comment-message {
+        min-height: 150px;
+        resize: none;
+    }
+    
+    .comment-bottom {
+        display: flex;
+    }
+
+    .comment-name {
+        flex: 1
+    }
+    
+    .comment-submit {
+        width: 200px;
+        border: 1px solid #ddd;
+        color: royalblue;
+        font-weight: bold;
+        
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
