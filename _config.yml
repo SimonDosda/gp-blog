@@ -30,6 +30,8 @@ github_username: simondosda
 
 show_excerpts: true
 
+staticman_url: https://sdosda-gp-blog.herokuapp.com/v3/entry/github/simondosda/gp-blog/main/comments
+
 # Build settings
 theme: minima
 plugins:
