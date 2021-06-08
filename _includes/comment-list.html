@@ -1,4 +1,5 @@
-{% assign comments = site.data.comments[page.slug] | where_exp: "item", "true" %}
+{% assign parent_id = include.parent_id | default: '' %}
+{% assign comments = site.data.comments[page.slug] | where_exp: "item", "item.parent_id == parent_id" %}
 {% assign sorted_comments = comments | sort: 'date' %}
 {% for comment in sorted_comments %}
 <div class="comment">
@@ -8,5 +9,12 @@
         {{ comment.date | date:"%H:%M - %b %-d, %Y, %Y" }}
     </time>
     <p>{{comment.message | strip_html | markdownify }}</p>
+    <div class="comment-reply">
+        <input id="reply-{{ comment._id}}" type="checkbox" class="checkbox">
+        <label class="open" for="reply-{{ comment._id }}">Reply to {{ comment.name }}</label>
+        <label class="close" for="reply-{{ comment._id }}">X</label>
+        {% include comment-form.html parent_id=comment._id %}
+        {% include comment-list.html parent_id=comment._id %}
+    </div>
 </div>
 {% endfor %}

@@ -16,7 +16,7 @@
 .comment-form {
     display: flex;
     flex-direction: column;
-    margin-top: 25px;
+    margin-bottom: 25px;
 
     .comment-message, .comment-name {
         font-size: 16px;
@@ -46,6 +46,45 @@
         
         &:hover {
             cursor: pointer;
+        }
+    }
+}
+
+.comment-reply {
+    padding: 15px;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+
+    .open {
+        font-style: italic;
+    }
+
+    .close {
+        display: none;
+        align-self: flex-end;
+        padding: 5px 10px;
+        border: 1px solid #ddd;
+    }
+    
+    .open:hover, .close:hover {
+        cursor: pointer;
+    }
+
+    .comment-form {
+        display: none;
+    }
+
+    .checkbox {
+        display: none;
+        &:checked ~ .open {
+            display: none;
+        }
+        &:checked ~ .close {
+            display: block;
+        }
+        &:checked ~ .comment-form {
+            display: flex;
         }
     }
 }
